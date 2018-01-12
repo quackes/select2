@@ -2019,7 +2019,10 @@ S2.define('select2/selection/search',[
 
     this.resizeSearch();
     if (searchHadFocus) {
-      this.$search.focus();
+       var searchEl = this.$search
+     	  setTimeout(function() {
+     	        searchEl.focus();
+     	  },0)
     }
   };
 
